@@ -159,7 +159,7 @@ public class FlappyBird extends JPanel implements ActionListener, KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_SPACE) {
-            velocityY = -9;
+            velocityY = -10;
             if (gameOver) {
                 // reset game by resetting conditions
                 bird.y = birdY;

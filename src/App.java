@@ -9,10 +9,16 @@ public class App {
 
         // build window
         JFrame frame = new JFrame("Flappy Bird");
-        frame.setVisible(true);
         frame.setSize(boardWidth, boardHeight);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
+
+        FlappyBird flappyBird = new FlappyBird();
+        frame.add(flappyBird);
+        frame.pack();
+        flappyBird.requestFocus();
+        frame.setVisible(true);
+
     }
 }
